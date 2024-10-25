@@ -1,4 +1,4 @@
-package com.example.dam2_18_10.data
+package com.example.dam2_18_10.model
 
 class AlumnosRepository {
     companion object {

@@ -1,4 +1,4 @@
-package com.example.dam2_18_10.data
+package com.example.dam2_18_10.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

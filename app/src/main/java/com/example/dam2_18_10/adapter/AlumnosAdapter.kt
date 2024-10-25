@@ -4,12 +4,12 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dam2_18_10.R
-import com.example.dam2_18_10.data.Alumno
+import com.example.dam2_18_10.model.Alumno
 
 class AlumnosAdapter (val listAlumnos: List<Alumno>): RecyclerView.Adapter<AlumnoViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AlumnoViewHolder {
-        val layoutInflater = LayoutInflater.from(parent.context)
-        return AlumnoViewHolder(layoutInflater.inflate(R.layout.alumno_item, parent, false))
+        val layoutInflater = LayoutInflater.from(parent.context).inflate(R.layout.alumno_item, parent, false)
+        return AlumnoViewHolder(layoutInflater)
     }
     override fun getItemCount(): Int {
         return listAlumnos.size
